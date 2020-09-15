@@ -1,54 +1,113 @@
 html, body {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 body {
-    background-color: rgb(230, 137, 17);
-    color: black;
+    background-color:#D8E2EE;
+    color: #181719;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
-section {
-    padding: 0 25px;
-}
- p {
-    color: blue;
-}
+nav {
+    padding: 1em 0;
+    margin-bottom: 2em;
 
-.box {
+}
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    color:#181719;
+}
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+li a:hover,
+li a:focus {
+    opacity: .5;
+}
+.active {
+    font-weight: 700;
+    color:  #ffffff;
+}
+.container {
+    margin: 0 auto;
+    max-width: 90%;
+}
+.bg-section {
+    width: 100%;
+    background: url(./img/bg.webp);
+    background-size: cover;
+    min-height: 40vh;
+    box-shadow:inset 0 0 0 2000px rgba(0,0,0,.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
-    border: 2px solid;
-    background-color: paleturquoise;
+}
+.btn,
+.btn:hover,
+.btn:focus {
+    padding: 1rem 2rem;
+    color: #ffffff;
+    font-weight: 700;
+    border: 2px solid black;
+    border-radius: 50px;
     
 }
-.font {
-    font-family: 'Black Han Sans', arial, sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    font-style: italic;
-    font: italic bold 40px 'Black Han Sans', arial, sans-serif;
+.heart {
+    color: #c51104;
 }
-#classes {
-    color: slateblue;
+.btn:hover,
+.btn:focus{
+    box-shadow: 10px 10px 25px #00d2c6, 
+            -15px -15px 30px #00ffff;
     
 }
-
-.box2 {
-    border: 2px solid;
-    background-color: plum;
-}
-#Nom {
-
-    color: red;
+.bg-section h1 {
+    color: #ffffff;
+    font-weight: 400;
 
 }
-#contact {
-
-    color: blue;
+.hero-section {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: row;
+}
+.level {
+    min-width: 50%;
 
 }
-
-.test {
+img {
+    border-radius: 50px;
+    object-fit: cover;
     
-    display: inline-block;
-  }
-
-  
+}
+.bg {
+  display: flex;
+  flex-direction: column;
+}
+.front {
+    background-color: #ADBACB;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.back {
+    background-color: #6B7688;
+    color: #d9d9d9;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
